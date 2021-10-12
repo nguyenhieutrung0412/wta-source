@@ -74,6 +74,12 @@
                                 </p>
                                 <span class="section">Thông tin tin tức</span>
                                 <div class="field item form-group">
+                                    <label class="col-form-label col-md-3 col-sm-3  label-align">Tiêu đề<span class="required">*</span></label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input class="form-control"  name="title" placeholder="...." required="required" />
+                                    </div>
+                                </div>
+                                <div class="field item form-group">
                                     <label class="col-form-label col-md-3 col-sm-3  label-align">Nội dung<span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6">
                                         <input class="form-control"  name="content" placeholder="...." required="required" />

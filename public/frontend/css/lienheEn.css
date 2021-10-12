@@ -1,0 +1,5 @@
+.bannerlienhe .text-left p::before {
+    content: 'Contact';
+    position: absolute;
+    text-shadow: -1px 0 #EC4C93, 0 1px #EC4C93, 1px 0 #EC4C93, 0 -1px #EC4C93;
+}

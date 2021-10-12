@@ -1,0 +1,88 @@
+.hmt .turn:nth-child(7) .circle::before {
+    content: 'Tự tin, tự trọng, tự tháo gỡ rào cản định kiến về giới khi biết ứng dụng  công nghệ để làm kinh tế.';
+    position: absolute;
+    width: 303px;
+    height: 69px;
+    font-family: SVN-Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+.hmt .turn:nth-child(6) .circle::before {
+    content: ' Có nhiều cơ hội để hưởng thụ và cống hiến.';
+    position: absolute;
+    width: 255px;
+    height: 46px;
+    font-family: SVN-Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+.hmt .turn:nth-child(5) .circle::before {
+    content: ' Cân bằng cuộc sống gia đình và sở thích cá nhân.';
+    position: absolute;
+    width: 228px;
+    height: 46px;
+    font-family: SVN-Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+.hmt .turn:nth-child(4) .circle::before {
+    content: 'Thay đổi tư duy, hành động phù hợp thời đại. ';
+    position: absolute;
+    width: 221px;
+    height: 46px;
+    font-family: SVN-Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+.hmt .turn:nth-child(3) .circle::before {
+    content: ' Nâng tầm vị thế công nghệ của đất nước. ';
+    position: absolute;
+    width: 221px;
+    height: 46px;
+    font-family: SVN-Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .hmt .turn:nth-child(3) .circle::before,
+    .hmt .turn:nth-child(4) .circle::before,
+    .hmt .turn:nth-child(5) .circle::before,
+    .hmt .turn:nth-child(6) .circle::before,
+    .hmt .turn:nth-child(7) .circle::before {
+        font-weight: 400;
+        width: 123px;
+        font-size: 10px;
+        line-height: 130%;
+        padding-left: 20px;
+    }
+}

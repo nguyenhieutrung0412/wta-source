@@ -92,3 +92,27 @@ Route::group(['module' => 'dashboard', 'middleware' => 'web', 'namespace' => "Ap
         });
     });
 });
+
+/*
+********************************************************************
+*******************ROUTE Ở PHẦN GIAO DIỆN User********************
+********************************************************************
+*/
+
+Route::group(['module' => 'user', 'middleware' => 'web', 'namespace' => "App\Http\Controllers"], function () {
+    Route::get("/news-user", ["as" => "admin.user.index.news", "uses" => "NewsFrontendController@getIndexNewENG"]);
+    Route::get("/home-user", ["as" => "admin.user.index.home", "uses" => "NewsFrontendController@getIndexHomeENG"]);
+    Route::get("/about-user", ["as" => "admin.user.index.about", "uses" => "NewsFrontendController@getIndexAboutENG"]);
+    Route::get("/service-user", ["as" => "admin.user.index.service", "uses" => "NewsFrontendController@getIndexServiceENG"]);
+    Route::get("/docthem-user", ["as" => "admin.user.index.docthem", "uses" => "NewsFrontendController@getIndexDocthemENG"]);
+    Route::get("/contact-user", ["as" => "admin.user.index.contact", "uses" => "NewsFrontendController@getIndexContactENG"]);
+    Route::get("/token-user", ["as" => "admin.user.index.token", "uses" => "NewsFrontendController@getIndexTokenENG"]);
+    Route::get("/privacypolicy-user", ["as" => "admin.user.index.privacypolicy", "uses" => "NewsFrontendController@getIndexPrivacyPolicyENG"]);
+    Route::get("/termofuse-user", ["as" => "admin.user.index.termofuse", "uses" => "NewsFrontendController@getIndexTermofuseENG"]);
+
+    Route::group(['middleware' => ['auth']], function () {
+
+
+    });
+});
+

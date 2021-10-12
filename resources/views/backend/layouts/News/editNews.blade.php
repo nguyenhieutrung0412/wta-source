@@ -74,8 +74,14 @@
                             <meta name="csrf-token" content="{{ csrf_token() }}">
                             <p>For alternative validation library <code>parsleyJS</code> check out in the <a href="form.html">form page</a>
                             </p>
-                            <span class="section">Thông tin Hotel</span>
+                            <span class="section">Thông tin Tin tức</span>
 
+                            <div class="field item form-group">
+                                    <label class="col-form-label col-md-3 col-sm-3  label-align">Tiêu đề<span class="required">*</span></label>
+                                    <div class="col-md-6 col-sm-6">
+                                        <input class="form-control" value="{{$news->title}}"  name="title" placeholder="...." required="required" />
+                                    </div>
+                                </div>
                             <div class="field item form-group">
                                 <label class="col-form-label col-md-3 col-sm-3  label-align">Nội dung<span class="required">*</span></label>
                                 <div class="col-md-6 col-sm-6">
