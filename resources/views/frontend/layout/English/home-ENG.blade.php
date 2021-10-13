@@ -20,15 +20,18 @@
             <div class="about-us">
                 <h1>About us</h1>
                 <div class="row">
+                    @foreach($about as $about)
+                   
                     <div class="col-md-5">
-                        <h2>We are WTA</h2>
-                        <p>WTA Token is the official digital asset of the Global Women's Innovative Startup Fund, developed by a team of experts and advisors from many parts of the world.</p>
-                        <p>WTA Token is based on Blockchain technology platform for individuals, entrepreneurs and businesses to develop and manage supply chains through smart contracts.</p>
-                        <p>WTA with the 5 years vision, will support millions of people around the world and thousands of innovative startups, building a sustainable business ecosystem and platform.</p>
+                        <h2>{{$about->title}}</h2>
+                        <p>{{$about->content}}</p>
+                        <p>{{$about->content_2}}</p>
+                        <p>{{$about->content_3}}</p>
                     </div>
                     <div class="col-md-7">
-                        <iframe width="900" height="506" src="https://www.youtube.com/embed/OnQUF0Y_bw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="900" height="506" src="{{$about->link_video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                    @endforeach
                 </div>
             </div>
             <div class="service">

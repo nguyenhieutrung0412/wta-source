@@ -17,13 +17,13 @@ class NewsFrontendController extends Controller
         return View('frontend.layout.English.news-ENG')->with('news',$all_new)->with('press',$all_press);
     }
     public function getIndexHomeENG(){
-        // $all_new = DB::table('news')->select('news.*');
-        // $all_new = $all_new->orderBy("news.id","DESC");
-        // $all_new = $all_new->paginate(6);
+        $about_us = DB::table('about_us')->get();
+      
         // $all_press = DB::table('press')->select('press.*');
         // $all_press = $all_press->orderBy("press.id","DESC");
         // $all_press = $all_press->paginate(6);
-       return View('frontend.layout.English.home-ENG');
+        //var_dump($about_us).die();
+       return View('frontend.layout.English.home-ENG')->with('about',$about_us);
    }
    public function getIndexAboutENG(){
             // $all_new = DB::table('news')->select('news.*');

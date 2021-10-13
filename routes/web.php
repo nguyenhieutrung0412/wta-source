@@ -90,6 +90,12 @@ Route::group(['module' => 'dashboard', 'middleware' => 'web', 'namespace' => "Ap
             Route::get("edit/{id}", ["as" => "admin.we-would.edit", "uses" => "WeWouldDashbordController@getEditWeWould"]);
             Route::post("update/{id}", ["as" => "admin.we-would.eidt", "uses" => "WeWouldDashbordController@getUpdateWeWould"]);
         });
+        Route::group(["prefix" => "about-us"], function () {
+            Route::get("/edit/{id}", ["as" => "admin.about-us.edit", "uses" => "AboutUsDashbordController@getUpdateAboutUs"]);
+            
+        
+            Route::post("update/{id}", ["as" => "admin.about-us.update", "uses" => "AboutUsDashbordController@postUpdateAboutUs"]);
+        });
     });
 });
 
